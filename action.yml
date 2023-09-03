@@ -1,6 +1,6 @@
 name: "Podcast Generator"
 author: "Drewes"
-Description: "Generates a feed for podcast from a YAML file"
+description: "Generates a feed for podcast from a YAML file"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -11,8 +11,8 @@ inputs:
   email:
     description: The commiter's email address
     required: true
-    default: ${{ "github.actor" }}@localhost
+    default: ${{ github.actor }}@localhost
   name:
     description: The commiter's name
     required: true
-    default: ${{ "github.actor" }}
+    default: ${{ github.actor }}
